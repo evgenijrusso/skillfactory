@@ -115,8 +115,6 @@ def has_access(func):
             print("Доступ пользователю", username, "запрещён")
     return wrapper
 
-
-
 @is_auth
 @has_access
 def from_db():
