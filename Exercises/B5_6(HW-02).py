@@ -1,9 +1,10 @@
+# Итоговое задание 5.6.1 (HW-02)
+# Игра «Крестики-нолики». В консоле с помощью форматированных строк.
 table = [
     ['-', '-', '-'],
     ['-', '-', '-'],
     ['-', '-', '-']
 ]
-
 
 def print_board(board):
     for row in board:
@@ -12,11 +13,7 @@ def print_board(board):
         print()
 
 
-# row, coll = map(int, input('Ввод через пробел n-строки и n-столбца: ').split())
-# row, coll = input('row: '), input('coll: ')
-# print('row, coll:', row, coll)
-
-def win(board, player):
+def win(board, player): # выигрышные варианты
     for row in board:
         if row.count(player) == 3:
             return True
@@ -24,19 +21,20 @@ def win(board, player):
         if board[0][i] == player and board[1][i] == player and board[2][i] == player:
             return True
 
-    if board[0][0] == player and board[1][1] == player and board[2][0] == player:
+    if board[0][2] == player and board[1][1] == player and board[2][0] == player:
         return True
 
-    if board[0][0] == player and board[1][1] == player and board[2][0] == player:
+    if board[0][0] == player and board[1][1] == player and board[2][2] == player:
         return True
-
 
 curr_player = 'x'
 
-while False:
+
+while True:
     print_board(table)
     print('Ход игрока', curr_player)
-    row, coll = 1, 1
+    row, coll = map(int, input('Ввод через пробел n-строки и n-столбца: ').split()) # ввод чисел от 1 до 3
+    row, coll = row -1, coll -1
 
     if table[row][coll] != '-':
         print('Ячейка занята')
