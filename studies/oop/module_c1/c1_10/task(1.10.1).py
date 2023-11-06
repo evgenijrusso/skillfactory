@@ -1,4 +1,4 @@
-from oop.C1_practice.cat import Cat
+from oop.module_c1.C1_practice.cat import Cat
 
 # Задание 1.10.1
 """
@@ -26,12 +26,16 @@ class Restangle:
     def get_area_rect(self):
         return self.width * self.heigth
 
+    @property
+    def proba(self):
+        return self.x + 100
+
 r1 = Restangle(x=5, y=10, width=50, height=100)
 r2 = Restangle(5,10,50,100)
 
 print('Задание 1.10.1')
 print('r1: ', r1)
-print('r2: ', r2)
+print('r2: ', r2.proba)
 
 print('\n','Задание 1.10.2')
 print('squery: ', r1.get_area_rect())
