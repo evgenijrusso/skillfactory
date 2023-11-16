@@ -91,7 +91,7 @@ print(my_counter())
 print(my_counter())
 print(my_counter())
 
-from functools import wraps
+
 # Декоратор
 def decorator_func(original_func):
     def wrapper_func():

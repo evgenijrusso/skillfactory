@@ -1,5 +1,5 @@
-from studies.oop.module_c2.c2_5.players import Player
 from studies.oop.module_c2.c2_5.boards import Board
+from studies.oop.module_c2.c2_5.players import Player
 
 print('------------- Class Player ------------------')
 ex_board_ru = Board(size=6, hid=False)

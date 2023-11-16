@@ -1,5 +1,4 @@
 #import pytest
-from oop.module_c2.c2_5.ships import Ship, Dot
 
 # class Dot:
 #     def __init__(self, x, y):

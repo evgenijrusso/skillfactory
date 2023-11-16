@@ -1,5 +1,6 @@
+from oop.module_c2.c2_5.ships import Ship, Dot, BoardUsedException, BoardOutException
+
 from studies.oop.module_c2.c2_5.boards import Board
-from  oop.module_c2.c2_5.ships import Ship,Dot, BoardUsedException, BoardOutException
 
 print('===============  Class Board ========================')
 ex_board = Board(size=6, hid=False)

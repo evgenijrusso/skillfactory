@@ -1,5 +1,5 @@
 from django.db import models
-from django.views.generic.base import View
+
 
 class StatusManager(models.Manager):
     pass

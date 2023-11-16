@@ -1,6 +1,8 @@
-from studies.oop.module_c2.c2_5.boards import Board
-from oop.module_c2.c2_5.ships import Ship, Dot
 import unittest
+
+from oop.module_c2.c2_5.ships import Dot
+
+from studies.oop.module_c2.c2_5.boards import Board
 
 
 class TestBoard(unittest.TestCase):

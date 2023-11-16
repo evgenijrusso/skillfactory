@@ -1,6 +1,8 @@
-from multiprocessing import Process
-import keyboard
 import time
+from multiprocessing import Process
+
+import keyboard
+
 
 def my_loop():
     while True:

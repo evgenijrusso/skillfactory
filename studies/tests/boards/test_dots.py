@@ -1,5 +1,6 @@
 import unittest
-from oop.module_c2.c2_5.ships import Ship, Dot
+
+from oop.module_c2.c2_5.ships import Dot
 
 
 def dots(self) -> list:  # возвращает список всех точек корабля

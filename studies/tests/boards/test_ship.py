@@ -1,7 +1,3 @@
-import pytest
-from oop.module_c2.c2_5.ships import Ship, Dot
-
-
 # def test_is_hit(self) -> bool:
 #     self.ship_4 = Ship.is_hit(dot=(1, 2))
 

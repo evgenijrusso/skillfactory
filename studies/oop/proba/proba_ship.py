@@ -1,4 +1,4 @@
-from oop.module_c2.c2_5.ships import Ship, Dot, BoardOutException
+from oop.module_c2.c2_5.ships import Ship, Dot
 
 print(' ------- Dot ---------')
 ex_dot1 = Dot(1, 2)

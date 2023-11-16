@@ -1,4 +1,5 @@
 from random import randint, choice
+
 from studies.oop.module_c2.c2_5.boards import Board, Dot
 
 
