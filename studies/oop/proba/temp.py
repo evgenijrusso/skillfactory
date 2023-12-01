@@ -1,18 +1,16 @@
-import time
-from multiprocessing import Process
+# Декораторы
+def logging(func):
+    def log_function_called():
+        print(f'{func}, called.')
+    func()
+    return log_function_called()
 
-import keyboard
+@logging
+def my_name():
+    print('john')
+@logging
+def friend_name():
+    print('Друг Олег')
 
 
-def my_loop():
-    while True:
-        print("a")
-        time.sleep(2)
 
-if __name__ == '__main__':
-    process = Process(target=my_loop)
-    process.start()
-    while process.is_alive():
-        if keyboard.is_pressed('q'):
-            process.terminate()
-            break
